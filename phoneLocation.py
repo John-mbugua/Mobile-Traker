@@ -31,10 +31,11 @@ folium.Marker([lat, lng],popup=yourLocation).add_to(myMap)
 # save to html file
 myMap.save("yourLocation.html")
 
-print("finished")
-fp = open('yourLocation.html', 'w')
-fp.write('first line')
-fp.close()
+import webbrowser
+
+webbrowser.open("yourLocation.html",new=2)
+
+
 
 
 
